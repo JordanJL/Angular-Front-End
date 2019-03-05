@@ -54,7 +54,7 @@ export const navItems: NavData[] = [
         url: '/mantenimiento/tipoCita',
         icon: 'icon-pencil'
       },
-      {
+      { 
         name: 'Tipo de Paciente',
         url: '/mantenimiento/tipoPaciente',
         icon: 'icon-drop'
