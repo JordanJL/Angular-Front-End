@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ListpersonaComponent } from './persona/persona.component';
 import { EditpacienteComponent } from './persona/editpaciente/editpaciente.component';
+import { AntecedentesComponent } from './antecedentes/antecedentes.component';
 import { ReferenciaComponent } from './referencia/referencia.component';
 
 const routes: Routes = [
@@ -32,7 +33,14 @@ const routes: Routes = [
          data: {
            title: 'Refencia'
          }
-      }
+      },
+      {
+        path: 'antecedentes',
+        component: AntecedentesComponent,
+        data: {
+          title: 'Antecedentes'
+        }
+     }
     ]
   }
 ];

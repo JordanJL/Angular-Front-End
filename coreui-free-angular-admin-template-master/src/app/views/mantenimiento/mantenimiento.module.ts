@@ -18,6 +18,7 @@ import { EditpacienteComponent } from './persona/editpaciente/editpaciente.compo
 import { AppGlobals } from '../../../gobals';
 import { PersonaService } from '../../shared-service/persona.service';
 import { ReferenciaComponent } from './referencia/referencia.component';
+import { AntecedentesComponent } from './antecedentes/antecedentes.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -30,6 +31,7 @@ import { ReferenciaComponent } from './referencia/referencia.component';
     ListpersonaComponent,
     EditpacienteComponent,
     ReferenciaComponent,
+    AntecedentesComponent,
     
     ],
     providers: [PersonaService,AppGlobals]
