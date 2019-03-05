@@ -61,7 +61,7 @@ export const navItems: NavData[] = [
       },
       {
         name: 'Antecendentes',
-        url: '/mantenimiento/antecendentes',
+        url: '/mantenimiento/antecedentes',
         icon: 'icon-pencil'
       },
       {
