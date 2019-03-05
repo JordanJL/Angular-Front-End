@@ -1,0 +1,142 @@
+
+<div class="container" >
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="form-group">
+          <h1 for="">Edición</h1>
+          <div class="row">
+
+            <div class="col-sm-4" >
+                <span>Tipo Documento : </span>
+                <select name="" class="form-control" [(ngModel)]="nuevoTipoDocumento"  id="">
+                <option>{{paciente.tipoDocumento}}</option>
+                </select>   
+            </div>
+
+            <div class="col-sm-4" >
+                <span>Numero Documento : </span> 
+                <input name="numeroDocu" id="numeroDocu"  [(ngModel)]="nuevoNumeroDocumento" type="number" value={{paciente.persona}} required class="form-control"  placeholder="Numero">
+            </div>
+
+            <div class="col-sm-4" >
+                <span>Profesión :  </span>
+                <select name="" class="form-control" [(ngModel)]="nuevaProfesion" ng-options="">
+                <option value="">Seleccione una profesion</option>
+                <option *ngFor="let profesion of profe" >{{profesion.profesion}}</option>
+                </select>   
+            </div>
+  
+
+        <div class="col-sm-4" >
+            <span>Nombre : </span> 
+            <input type="text" class="form-control" [(ngModel)]="nuevoNombre" value={{paciente.nombre}} >
+        </div>
+        
+        <div class="col-sm-4" >
+            <span>Apellidos : </span>
+            <input type="text" class="form-control" [(ngModel)]="nuevoApellidos" value={{paciente.apellidos}} placeholder="Apellidos">
+        </div>
+        
+        <div class="col-sm-4" >
+            <span>Tipo de Paciente : </span>
+            <select name="" value={{paciente.tipoPaciente}} [(ngModel)]="nuevoTipoPaciente" class="form-control" id="">
+            </select>
+        </div>
+
+        <div class="col-sm-4" >
+            <span>Fecha Nacimiento : </span>
+            <input type="date" value="{{paciente.fechaNacimiento}}"  [(ngModel)]="nuevofechaNacimiento" class="form-control" >
+        </div>
+
+        <div class="col-sm-4" >
+            <span>Edad : </span>
+            <input type="number" class="form-control" [(ngModel)]="nuevaEdad" placeholder="Edad">
+        </div>
+
+        <div class="col-sm-4" >
+            <span>Correo Electronico : </span>
+            <input type="email" class="form-control" [(ngModel)]="nuevoCorreoElectronico" value="{{paciente.email}}" placeholder="Correo Electronico">
+        </div>
+
+        <div class="col-sm-4" >
+            <span>Teléfono Habita : </span>
+            <input type="text" class="form-control" [(ngModel)]="nuevoTelefonoHabita" value="{{paciente.telefono1}}" placeholder="Teléfono Habitación">
+        </div>
+        <div class="col-sm-4">
+            <span>Teléfono Movil : </span>
+            <input type="number" class="form-control"  [(ngModel)]="nuevoTelefonoMovil" value="{{paciente.telefono2}}" placeholder="Teléfono Movil">
+        </div>
+        <div class="col-sm-4">
+            <span>Género : </span>
+            <select name="" class="form-control" [(ngModel)]="nuevoGenero" id="">
+                <option>{{paciente.sexo}}</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+        
+        <div class="col-sm-4">
+            <span>Provincia/Canton : </span>
+            <input type="text" class="form-control"  [(ngModel)]="nuevaProvincia" value="{{paciente.provincia}}" placeholder="Provincia / Canton">
+        </div>
+
+        <div class="col-sm-4">
+            <span>Pais : </span>
+            <select name="" class="form-control"  [(ngModel)]="nuevoPais" id="">
+                <option *ngFor="let pais of pais" >{{pais.nombre}}</option>
+            </select>
+        </div>
+
+        <div class="col-sm-4">
+            <span>Estado Civil : </span>
+            <select name="" class="form-control" [(ngModel)]="nuevoEstadoCivil" id="">
+                <option *ngFor="let civil of civil" >{{civil.desripcion}}</option>
+            </select>
+        </div>
+
+        <div class="col-sm-12">
+            <span>Dirección : </span>
+            <textarea name="" class="form-control" id="" cols="30" rows="3" >
+                {{paciente.direccion}}
+            </textarea>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-dark" (click)="GuardarEdicion(paciente)" type="button">Guardar</button>
+  <button type="button" class="btn btn-dark">Cancelar</button>
+
+
+
+  <label for="">Acompañante</label>
+
+<table style="width:100%" class="form-control">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+</div>
