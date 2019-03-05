@@ -47,12 +47,9 @@ import { TooltipsComponent } from './tooltips.component';
 
 import { BaseRoutingModule } from './base-routing.module';
 import { PersonaService } from '../../shared-service/persona.service';
-import { ListpersonaComponent } from './persona/persona.component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { HttpModule } from '@angular/http';
 
-//Edicion Pacientes 
-import { EditpacienteComponent } from './persona/editpaciente/editpaciente.component'
 
 // Components Alergias
 import { AlergiasService } from '../../shared-service/alergias.service';
@@ -88,9 +85,7 @@ import { AppGlobals } from '../../../gobals';
     PopoversComponent,
     ProgressComponent,
     TooltipsComponent,
-    ListpersonaComponent,
     AlergiasComponent,
-    EditpacienteComponent
     
 
   ],

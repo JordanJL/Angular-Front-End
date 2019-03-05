@@ -12,9 +12,7 @@ import { PaginationsComponent } from './paginations.component';
 import {PopoversComponent} from './popovers.component';
 import {ProgressComponent} from './progress.component';
 import {TooltipsComponent} from './tooltips.component';
-import { ListpersonaComponent } from './persona/persona.component';
-import { AlergiasComponent } from './alergias/alergias.component';
-import { EditpacienteComponent } from './persona/editpaciente/editpaciente.component';
+
 
 const routes: Routes = [
   {
@@ -69,28 +67,7 @@ const routes: Routes = [
           title: 'Carousels'
         }
       },
-      {
-        path: 'persona',
-        component: ListpersonaComponent,
-        data: {
-          title: 'Persona'
-        }
-      },
-        {
-          path: 'editpaciente',
-          component: EditpacienteComponent,
-          data: {
-            title: 'Pacientes'
-          }
-       },
-      
-      {
-        path: 'alergia',
-        component: AlergiasComponent,
-        data: {
-          title: 'Alergias'
-        }
-      },
+
       {
         path: 'collapses',
         component: CollapsesComponent,

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ListpersonaComponent } from './persona/persona.component';
 import { EditpacienteComponent } from './persona/editpaciente/editpaciente.component';
+import { ReferenciaComponent } from './referencia/referencia.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,14 @@ const routes: Routes = [
           data: {
             title: 'Pacientes'
           }
-       }
+       },
+       {
+         path: 'referencia',
+         component: ReferenciaComponent,
+         data: {
+           title: 'Refencia'
+         }
+      }
     ]
   }
 ];
@@ -33,4 +41,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MantenimientoRoutingModule {}
+export class MantenimientoRoutingModule{}

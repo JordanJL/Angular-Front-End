@@ -73,6 +73,11 @@ export const navItems: NavData[] = [
         name: 'Medico',
         url: '/mantenimiento/medico',
         icon: 'icon-pencil'
+      },
+      {
+        name: 'Refencia',
+        url: '/mantenimiento/referencia',
+        icon: 'icon-pencil'
       }
     ]
   },
@@ -141,17 +146,6 @@ export const navItems: NavData[] = [
         icon: 'icon-puzzle'
       }
       // ,*/
-      {
-        name: 'Persona',
-        url: '/base/persona',
-        icon: 'icon-puzzle'
-      }
-      ,
-      {
-        name: 'Alergias',
-        url: '/base/alergia',
-        icon: 'icon-puzzle'
-      }
     ]
   },
   {

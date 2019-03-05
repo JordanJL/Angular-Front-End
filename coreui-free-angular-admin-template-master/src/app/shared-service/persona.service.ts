@@ -9,6 +9,7 @@ import {Persona} from '../persona';
 
 @Injectable()
 export class PersonaService{
+
     private baseUrl: String = 'http://localhost:8080';
     private hearders= new Headers({'Content-Type':'application/json'});
     private options = new RequestOptions({headers: this.hearders});
@@ -29,6 +30,7 @@ export class PersonaService{
 
     }
 
+    
     deletePersona(id:Number){
 
         return this._http.delete(this.baseUrl+'/personas/'+id,this.options).map((response:Response)=>response.json())
@@ -36,7 +38,7 @@ export class PersonaService{
 
     }
 
-    cretePersona(persona:Persona){
+    createPersona(persona:Persona){
 
         return this._http.post(this.baseUrl+'/personas/',JSON.stringify(persona),this.options).map((response:Response)=>response.json())
         .catch(this.errorHandler);

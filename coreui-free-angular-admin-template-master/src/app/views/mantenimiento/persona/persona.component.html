@@ -15,8 +15,8 @@
     </div>
 
   <div class="panel panel-default">
-
-     <ng2-smart-table [settings]="settings"  [source]="source" (custom)="routeToAPage($event)" (createConfirm)="onCreateConfirm($event)" (editConfirm)="onEditConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
+      <input type="button" class="btn btn-primary" value="Agregar Nueva Persona" [routerLink]="['../editpaciente']" >
+     <ng2-smart-table [settings]="settings"  [source]="source" (custom)="routeToAPage($event)" (createConfirm)="routeToAPage($event)" (editConfirm)="onEditConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
     
     </div>
  

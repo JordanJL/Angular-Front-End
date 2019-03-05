@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AlergiasService} from '../../../shared-service/alergias.service';
-import {Alergias} from '../../../alergia';
+//import {Alergias} from '../alergia';
 import { LocalDataSource } from 'ng2-smart-table';
 import { Router } from '@angular/router';
 
@@ -62,7 +62,7 @@ export class AlergiasComponent implements OnInit {
     },
   };isAllSelected = true;
   source: LocalDataSource;
-  private alergia: Alergias[];
+  //private alergia: Alergias[];
   
 
   constructor(private _alergiasService:AlergiasService, private router: Router){
@@ -75,8 +75,8 @@ export class AlergiasComponent implements OnInit {
   cargarDataSource(){
     this._alergiasService.getAlergias().subscribe((alergias)=>{
       console.log(alergias.alergia);
-      this.alergia=alergias;
-      this.source = new LocalDataSource(this.alergia);
+     // this.alergia=alergias;
+     // this.source = new LocalDataSource(this.alergia);
       console.log(this.source);
       
   },(error)=>{

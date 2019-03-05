@@ -72,7 +72,7 @@ export const routes: Routes = [
       },
       {
         path: 'mantenimiento',
-        loadChildren: './views/mantenimiento/base.module#MantenimientoModule'
+        loadChildren: './views/mantenimiento/mantenimiento.module#MantenimientoModule'
       },
       {
         path: 'notifications',
