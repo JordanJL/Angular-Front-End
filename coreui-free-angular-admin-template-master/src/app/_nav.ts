@@ -40,40 +40,42 @@ export const navItems: NavData[] = [
     }*/
   },
   {
-    title: true,
-    name: 'Mantenimineto'
+    name: 'Mantenimiento',
+    icon: 'icon-puzzle',
+    url: '/mantenimiento',
+    children: [
+      {
+        name: 'Tipo de Alergia',
+        url: '/mantenimiento/tipoAlergia',
+        icon: 'icon-drop'
+      },
+      {
+        name: 'Tipo de Cita',
+        url: '/mantenimiento/tipoCita',
+        icon: 'icon-pencil'
+      },
+      {
+        name: 'Tipo de Paciente',
+        url: '/mantenimiento/tipoPaciente',
+        icon: 'icon-drop'
+      },
+      {
+        name: 'Antecendentes',
+        url: '/mantenimiento/antecendentes',
+        icon: 'icon-pencil'
+      },
+      {
+        name: 'Paciente',
+        url: '/mantenimiento/persona',
+        icon: 'icon-pencil'
+      },
+      {
+        name: 'Medico',
+        url: '/mantenimiento/medico',
+        icon: 'icon-pencil'
+      }
+    ]
   },
-  {
-    name: 'Tipo de Alergia',
-    url: '/mantenimiento/tipoAlergia',
-    icon: 'icon-drop'
-  },
-  {
-    name: 'Tipo de Cita',
-    url: '/mantenimiento/tipoCita',
-    icon: 'icon-pencil'
-  },
-  {
-    name: 'Tipo de Paciente',
-    url: '/mantenimiento/tipoPaciente',
-    icon: 'icon-drop'
-  },
-  {
-    name: 'Antecendentes',
-    url: '/mantenimiento/antecendentes',
-    icon: 'icon-pencil'
-  },
-  {
-    name: 'Paciente',
-    url: '/mantenimiento/paciente',
-    icon: 'icon-pencil'
-  },
-  {
-    name: 'Medico',
-    url: '/mantenimiento/medico',
-    icon: 'icon-pencil'
-  },
-
   {
     title: true,
     name: 'Operaciones'
@@ -144,7 +146,7 @@ export const navItems: NavData[] = [
         url: '/base/persona',
         icon: 'icon-puzzle'
       }
-      , 
+      ,
       {
         name: 'Alergias',
         url: '/base/alergia',

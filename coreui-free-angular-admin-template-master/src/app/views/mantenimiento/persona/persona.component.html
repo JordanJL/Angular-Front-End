@@ -1,0 +1,22 @@
+
+
+        <div class="col-md-12">              
+              <select [(ngModel)]="opcionSeleccionado"  class="btn btn-primary dropdown-toggle" (change)="capturar()">
+                    <option value="10">Selecciona una opción</option>    
+                <option *ngFor="let dato of datos">
+                      {{dato}}
+                    </option>
+                </select>
+        </div>
+        <div class="col-md-12 text-right">   
+        <input type="text" [(ngModel)]="filtroBusqueda" onKeyUp="this.value=this.value.toUpperCase();" id="name" name="name" value="" placeholder="FILTRO">
+        <input type="button" class="btn btn-primary" value="Buscar" (click)="cargarDataSource()">
+        
+    </div>
+
+  <div class="panel panel-default">
+
+     <ng2-smart-table [settings]="settings"  [source]="source" (custom)="routeToAPage($event)" (createConfirm)="onCreateConfirm($event)" (editConfirm)="onEditConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
+    
+    </div>
+ 

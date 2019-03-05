@@ -33,7 +33,7 @@ export class EditpacienteComponent implements OnInit{
 
     constructor( private router: Router , private _global: AppGlobals, private _personaServise:PersonaService){
       if(this._global.edicionPaciente==""){
-        this.router.navigate(['base/persona']);
+        this.router.navigate(['mantenimiento/persona']);
       }else{
 
         console.log(this._global.edicionPaciente);

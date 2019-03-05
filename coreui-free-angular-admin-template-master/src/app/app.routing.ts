@@ -33,7 +33,7 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
     data: {
-      title: 'Login Page'
+      title: 'Login'
     }
   },
   {
@@ -47,7 +47,7 @@ export const routes: Routes = [
     path: '',
     component: DefaultLayoutComponent,
     data: {
-      title: 'Home'
+      title: 'Inicio'
     },
     children: [
       {
@@ -69,6 +69,10 @@ export const routes: Routes = [
       {
         path: 'icons',
         loadChildren: './views/icons/icons.module#IconsModule'
+      },
+      {
+        path: 'mantenimiento',
+        loadChildren: './views/mantenimiento/base.module#MantenimientoModule'
       },
       {
         path: 'notifications',
